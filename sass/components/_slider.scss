@@ -1,17 +1,13 @@
+.slider__img {
+  &--1 {
+    filter: brightness(70%);
+  }
 
+  &--2 {
+    filter: brightness(70%);
+  }
 
-.slider__img{
-
-    &--1{
-        filter: brightness(70%);
-    }
-
-    &--2{
-        filter: brightness(70%);
-    }
-
-    &--3{
-        filter: brightness(70%);
-    }
+  &--3 {
+    filter: brightness(70%);
+  }
 }
-

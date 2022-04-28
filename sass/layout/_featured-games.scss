@@ -1,83 +1,71 @@
-.featured-games{
-    &-header{
-        margin-bottom: 8rem;
-        display: flex;
-        justify-content: center;
+.featured-games {
+  &-header {
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__container {
+    max-width: 60%;
+
+    margin: 0 auto;
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 5rem;
+  }
+
+  &__links:link,
+  &__links:visited {
+    text-transform: uppercase;
+    color: $color-white;
+    font-size: 1rem;
+    font-family: $font-secondary;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  &-poster {
+    margin-bottom: 0.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-poster-game-type {
+    transition: all 0.6s;
+  }
+
+  &-poster::before {
+    content: '';
+    width: 100%;
+    height: 0%;
+    background-color: rgba($color-primary, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.6s;
+    overflow: hidden;
+  }
+
+  &-poster:hover {
+    &::before {
+      height: 100%;
     }
+  }
 
-    &__container{
-        max-width: 60%;
+  &-poster:hover &-poster-game-type {
+    transform: translateY(10rem);
+  }
 
-        margin: 0 auto;
-        display: grid;
-        // grid-template-columns: repeat(3, 1fr);
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        grid-gap: 5rem;
-    }
+  &-translated {
+    text-align: center;
+    transform: translateX(150%);
+    transition: transform 0.6s;
+    width: 100%;
+    @include flex-row;
+  }
 
-    &__links:link,
-    &__links:visited{
-        text-transform: uppercase;
-        color: $color-white;
-        font-size: 1rem;
-        font-family: $font-secondary;
-        text-decoration: none;
-        transition: all .3s;
-    }
-
-    &-poster{
-        margin-bottom: .5rem;
-        position: relative;
-        overflow: hidden;
-    }
-
-    &-poster-game-type{
-        transition: all .6s;
-    }
-
-    &-poster::before{
-        content: "";
-        width: 100%;
-        height: 0%;
-        background-color: rgba($color-primary, .5);
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: all .6s;
-        overflow: hidden;
-
-    }
-
-    &-poster:hover{
-
-        &::before{
-            height: 100%;
-        }
-            
-    }
-
-    &-poster:hover &-poster-game-type{
-        transform: translateY(10rem);
-    }
-
-    &-translated{
-        text-align: center;
-        transform: translateX(150%);
-        transition: transform .6s;
-        width: 100%;
-        @include flex-row;
-    }
-
-    &-poster:hover &-translated{
-        transform: translateX(-50%);
-    }
-    
-  
-
-
-
-
+  &-poster:hover &-translated {
+    transform: translateX(-50%);
+  }
 }
-
-
-

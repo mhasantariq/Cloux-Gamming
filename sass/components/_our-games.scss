@@ -1,61 +1,52 @@
-.our-games{
+.our-games {
+  &__container {
+    max-width: 60%;
+    min-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 5rem;
+  }
 
-    
-    &__container{
-        max-width: 60%;
-        min-width: 80%;
-        margin: 0 auto;
-        display: grid;
-        // grid-template-columns: repeat(3, 1fr);
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        grid-gap: 5rem;
-    }
+  &__links:link,
+  &__links:visited {
+    text-transform: uppercase;
+    color: $color-grey;
+    font-size: 1.1rem;
+    font-family: $font-secondary;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
 
-    &__links:link,
-    &__links:visited{
-        text-transform: uppercase;
-        color: $color-grey;
-        font-size: 1.1rem;
-        font-family: $font-secondary;
-        text-decoration: none;
-        transition: all .3s;
-    }
-
-    &__links:hover{
-        color: $color-primary;
-    }
+  &__links:hover {
+    color: $color-primary;
+  }
 }
 
-.poster{
-    margin-bottom: .5rem;
-    position: relative;
+.poster {
+  margin-bottom: 0.5rem;
+  position: relative;
 }
 
-.game{
-    min-height: fit-content;
+.game {
+  min-height: fit-content;
 
-    & svg{
-        width: 2rem;
-        height: 2rem;
-        fill: $color-primary;
-        padding-right: .5rem;
-
-    }
+  & svg {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-primary;
+    padding-right: 0.5rem;
+  }
 }
 
-.game-1{
-    width: 100%;
-    height: auto;
+.game-1 {
+  width: 100%;
+  height: auto;
 }
 
-
-
-.all-games-btn-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.all-games-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
-

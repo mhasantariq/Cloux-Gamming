@@ -1,25 +1,22 @@
-.game-shop{
+.game-shop {
+  &-container {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    &-container{
-        margin: 0 auto;
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        & > :not(:last-child){
-            margin-right: 3rem;
-        }
+    & > :not(:last-child) {
+      margin-right: 3rem;
     }
-    
-
+  }
 }
 
-.game-shop-image{
-    width: 100%;
-    height: auto;
+.game-shop-image {
+  width: 100%;
+  height: auto;
 }
 
-.game-shop-images{
-    padding-bottom: 1rem;
+.game-shop-images {
+  padding-bottom: 1rem;
 }
