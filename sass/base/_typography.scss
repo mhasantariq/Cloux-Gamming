@@ -1,0 +1,88 @@
+.heading-primary{
+    font-family: $font-primary;
+    font-size: 8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &--dark{
+        color: $color-black;
+    }
+
+    &--light{
+        color: $color-white;
+    }
+
+    &--primary{
+        color: $color-primary;
+    }
+
+
+    &-lg{
+        font-size: 5rem;
+    }
+
+    &-md{
+        font-size: 3rem;
+
+    }
+
+    &-sm{
+        font-size: 2.5rem;
+    }
+
+    
+
+    &-hover{
+        font-family: $font-primary;
+        font-size: 8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover{
+            color: $color-primary;
+        }
+    }
+
+
+}
+
+.heading-secondary{
+    font-family: $font-secondary;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-primary;
+    text-transform: uppercase;
+
+    &--dark{
+        color: $color-black;
+    }
+
+    &--light{
+        color: $color-white;
+    }
+}
+
+.sample-text{
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+
+    &--sm{
+        font-size: 1.2rem;
+    }
+
+    &--light{
+        color: $color-white;
+    }
+
+    &--grey{
+        color: $color-grey;
+    }
+
+    &--dark{
+        color: $color-black;
+    }
+}

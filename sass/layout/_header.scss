@@ -1,0 +1,166 @@
+.header{
+    background-image: linear-gradient(rgba($color-black,.3),rgba($color-black,.3)), url(../../img/slider_1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    padding-top: 3rem;
+
+    &__container{
+        margin: 0 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icons{
+        align-self: flex-end;
+        
+    }
+
+    &__icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: $color-white;
+        transition: all .2s;
+
+        &:not(:last-child){
+            margin-right: .8rem;
+        }
+        
+
+        &:hover{
+            fill: $color-primary;
+            cursor: pointer;
+        }
+    }
+
+    .game__features{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__links:link,
+    &__links:visited{
+        text-transform: uppercase;
+        color: $color-white;
+        font-size: 1.2rem;
+        font-family: $font-secondary;
+        text-decoration: none;
+        transition: all .2s;
+    }
+
+    &__links:hover{
+        color: $color-primary;
+    }
+
+    .avialable-on{
+        font-size: 1.5rem;
+        color: $color-white;
+    }
+
+    &__info{
+        max-width: 80rem;
+        text-align: center;
+
+        & svg{
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: $color-primary;
+        }
+    }
+
+    &__flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn{
+
+        color: $color-white;
+        border-bottom: 1.5px solid $color-white;
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        transition: all .5s;
+
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+
+        &:hover{
+            color: $color-primary;
+            border-bottom: 1.5px solid $color-primary;
+        }
+
+        &:active{
+            border: 0;
+        }
+    }
+
+    &__buttons{
+        margin-left: 5rem;
+    }
+
+
+
+
+
+    &__login-signup-btn:link,
+    &__login-signup-btn:visited{
+        color: $color-white;
+        font-size: 1rem;
+        background-color: $color-primary;
+        text-decoration: none;
+        padding: .6rem 1.5rem;
+        border-top-left-radius: 4rem;
+        border-bottom-left-radius: 4rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+
+    }
+
+    &__login-signup-btn::before{
+        content: "Login";
+        color: $color-white;
+        font-size: 1rem;
+        background-color: $color-primary;
+        text-decoration: none;
+        padding: .6rem 1.5rem;
+        border-top-left-radius: 4rem;
+        border-bottom-left-radius: 4rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        position: absolute;
+        right: 0px;
+        top: -1.5px;
+    }
+
+    &__login-signup-btn::after{
+        content: "Sign up";
+        color: $color-white;
+        font-size: 1rem;
+        background-color: $color-primary;
+        text-decoration: none;
+        padding: .6rem 1.5rem;
+        border-top-right-radius: 4rem;
+        border-bottom-right-radius: 4rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        position: absolute;
+        right: -6.6rem;
+        top: -1.5px;
+
+    }
+
+
+
+}
+
+
+
+

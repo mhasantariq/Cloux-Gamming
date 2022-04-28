@@ -1,0 +1,33 @@
+.about-cloux{
+    background-image: linear-gradient(rgba($color-black, .6), rgba($color-black, .6)), url(../../img/about-bg.jpg);
+    background-size: cover;
+    padding: 10rem;
+
+    &-container{
+        max-width: 75%;
+        margin: 0 auto;
+
+        & > :not(:last-child){
+            margin-right: 8rem;
+        }
+    }
+
+    &-game-title{
+        width: 60%;
+        line-height: 1.1;
+        margin-bottom: 2rem;
+    }
+
+    &-game-info{
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+
+    &-btn > :not(:last-child){
+        margin-right: 4rem;
+    }
+
+    &-pic{
+        box-shadow: 3px 3px 2.5rem  rgba($color-black,.8);
+    }
+}

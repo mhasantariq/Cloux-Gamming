@@ -1,0 +1,48 @@
+.social{
+    
+    &-icons-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 6rem;
+
+        & > :not(:last-child){
+            margin-right: 10rem;
+        }
+    }
+
+    &-icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+    &-icon{
+        height: 4rem;
+        width: 4rem;
+        fill: $color-primary;
+        margin-bottom: 1rem;
+
+    }
+
+    &-desc{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: $font-secondary;
+        transition: all .4s;
+
+        &:hover{
+            color: $color-primary;
+        }
+
+    }
+
+    &-icons:hover &-desc{
+        color: $color-primary;
+    }
+}

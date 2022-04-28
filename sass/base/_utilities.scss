@@ -1,0 +1,29 @@
+.u-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.margin-bottom-sm{margin-bottom: 2rem;}
+.margin-bottom-md{margin-bottom: 3rem;}
+.margin-bottom-lg{margin-bottom: 4rem;}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.position-absolute{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.position-absolute-bl{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}

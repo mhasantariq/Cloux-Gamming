@@ -1,0 +1,619 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.heading-primary {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  .heading-primary--dark {
+    color: #000; }
+  .heading-primary--light {
+    color: #fff; }
+  .heading-primary--primary {
+    color: #ffba00; }
+  .heading-primary-lg {
+    font-size: 5rem; }
+  .heading-primary-md {
+    font-size: 3rem; }
+  .heading-primary-sm {
+    font-size: 2.5rem; }
+  .heading-primary-hover {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    transition: all .3s;
+    cursor: pointer; }
+    .heading-primary-hover:hover {
+      color: #ffba00; }
+
+.heading-secondary {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffba00;
+  text-transform: uppercase; }
+  .heading-secondary--dark {
+    color: #000; }
+  .heading-secondary--light {
+    color: #fff; }
+
+.sample-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem; }
+  .sample-text--sm {
+    font-size: 1.2rem; }
+  .sample-text--light {
+    color: #fff; }
+  .sample-text--grey {
+    color: #999999; }
+  .sample-text--dark {
+    color: #000; }
+
+.u-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.margin-bottom-sm {
+  margin-bottom: 2rem; }
+
+.margin-bottom-md {
+  margin-bottom: 3rem; }
+
+.margin-bottom-lg {
+  margin-bottom: 4rem; }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.position-absolute {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem; }
+
+.position-absolute-bl {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem; }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../img/slider_1.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+  padding-top: 3rem; }
+  .header__container {
+    margin: 0 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .header__icons {
+    align-self: flex-end; }
+  .header__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #fff;
+    transition: all .2s; }
+    .header__icon:not(:last-child) {
+      margin-right: .8rem; }
+    .header__icon:hover {
+      fill: #ffba00;
+      cursor: pointer; }
+  .header .game__features {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+  .header__links:link, .header__links:visited {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    transition: all .2s; }
+  .header__links:hover {
+    color: #ffba00; }
+  .header .avialable-on {
+    font-size: 1.5rem;
+    color: #fff; }
+  .header__info {
+    max-width: 80rem;
+    text-align: center; }
+    .header__info svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: #ffba00; }
+  .header__flex-column {
+    display: flex;
+    flex-direction: column; }
+  .header .btn {
+    color: #fff;
+    border-bottom: 1.5px solid #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    transition: all .5s; }
+    .header .btn:not(:last-child) {
+      margin-right: 4rem; }
+    .header .btn:hover {
+      color: #ffba00;
+      border-bottom: 1.5px solid #ffba00; }
+    .header .btn:active {
+      border: 0; }
+  .header__buttons {
+    margin-left: 5rem; }
+  .header__login-signup-btn:link, .header__login-signup-btn:visited {
+    color: #fff;
+    font-size: 1rem;
+    background-color: #ffba00;
+    text-decoration: none;
+    padding: .6rem 1.5rem;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative; }
+  .header__login-signup-btn::before {
+    content: "Login";
+    color: #fff;
+    font-size: 1rem;
+    background-color: #ffba00;
+    text-decoration: none;
+    padding: .6rem 1.5rem;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    right: 0px;
+    top: -1.5px; }
+  .header__login-signup-btn::after {
+    content: "Sign up";
+    color: #fff;
+    font-size: 1rem;
+    background-color: #ffba00;
+    text-decoration: none;
+    padding: .6rem 1.5rem;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    right: -6.6rem;
+    top: -1.5px; }
+
+.footer {
+  background-color: #111111; }
+  .footer-container {
+    max-width: 60%;
+    margin: 0 auto; }
+
+.header__nav-item {
+  list-style: none;
+  display: inline-block;
+  padding: 2rem; }
+  .header__nav-item:not(:last-child) {
+    margin-right: 3rem; }
+
+.header__nav-link {
+  transition: all .2s; }
+  .header__nav-link:link, .header__nav-link:visited {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem; }
+  .header__nav-link:hover {
+    color: #ffba00; }
+
+.featured-games-header {
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: center; }
+
+.featured-games__container {
+  max-width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 5rem; }
+
+.featured-games__links:link, .featured-games__links:visited {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  transition: all .3s; }
+
+.featured-games-poster {
+  margin-bottom: .5rem;
+  position: relative;
+  overflow: hidden; }
+
+.featured-games-poster-game-type {
+  transition: all .6s; }
+
+.featured-games-poster::before {
+  content: "";
+  width: 100%;
+  height: 0%;
+  background-color: rgba(255, 186, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .6s;
+  overflow: hidden; }
+
+.featured-games-poster:hover::before {
+  height: 100%; }
+
+.featured-games-poster:hover .featured-games-poster-game-type {
+  transform: translateY(10rem); }
+
+.featured-games-translated {
+  text-align: center;
+  transform: translateX(150%);
+  transition: transform .6s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+
+.featured-games-poster:hover .featured-games-translated {
+  transform: translateX(-50%); }
+
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem; }
+  .social-icons-container > :not(:last-child) {
+    margin-right: 10rem; }
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+
+.social-icon {
+  height: 4rem;
+  width: 4rem;
+  fill: #ffba00;
+  margin-bottom: 1rem; }
+
+.social-desc {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  transition: all .4s; }
+  .social-desc:hover {
+    color: #ffba00; }
+
+.social-icons:hover .social-desc {
+  color: #ffba00; }
+
+.slider__img--1 {
+  filter: brightness(70%); }
+
+.slider__img--2 {
+  filter: brightness(70%); }
+
+.slider__img--3 {
+  filter: brightness(70%); }
+
+.about-us__btn, .about-us__btn:link, .about-us__btn:visited {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffba00;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffba00;
+  display: inline-block;
+  padding: 1.5rem;
+  position: relative; }
+
+.about-us__btn::before {
+  background-color: #ffba00;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all .3s;
+  z-index: 1;
+  outline: 0; }
+
+.about-us__btn:hover span {
+  color: #fff;
+  z-index: 10;
+  position: relative; }
+
+.about-us__btn:hover::before {
+  height: 100%;
+  border-bottom: 1px solid black; }
+
+.available-on-btn, .available-on-btn:link, .available-on-btn:visited {
+  padding: 2rem 2rem;
+  border: 1px solid #ffba00;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffba00;
+  font-weight: 700;
+  transition: all .3s; }
+
+.available-on-btn:hover {
+  background-color: #ffba00;
+  color: #fff; }
+
+.available-on > :not(:last-child) {
+  margin-right: 1rem; }
+
+.about-us--1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../img/box-1-bg.jpg);
+  background-size: cover;
+  padding: 5rem; }
+
+.about-us--2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../img/box-2-bg.jpg);
+  background-size: cover;
+  padding: 5rem; }
+
+.about-us--3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../img/box-3-bg.jpg);
+  background-size: cover;
+  padding: 5rem; }
+
+.about-us__container {
+  flex: 0 0 25%; }
+  .about-us__container:not(:last-child) {
+    margin-right: -15rem; }
+
+.our-games__container {
+  max-width: 60%;
+  min-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 5rem; }
+
+.our-games__links:link, .our-games__links:visited {
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  transition: all .3s; }
+
+.our-games__links:hover {
+  color: #ffba00; }
+
+.poster {
+  margin-bottom: .5rem;
+  position: relative; }
+
+.game {
+  min-height: fit-content; }
+  .game svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #ffba00;
+    padding-right: .5rem; }
+
+.game-1 {
+  width: 100%;
+  height: auto; }
+
+.all-games-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.game-search-box {
+  background-image: linear-gradient(rgba(255, 186, 0, 0.6), rgba(255, 186, 0, 0.6)), url(../../img/search-1.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  flex-wrap: wrap;
+  align-items: center; }
+  .game-search-box input {
+    padding: 1.5rem;
+    width: 20rem;
+    border: 1px solid #fff;
+    background: transparent;
+    outline: 0;
+    color: #fff; }
+    .game-search-box input:focus {
+      outline: none; }
+    .game-search-box input::-webkit-input-placeholder {
+      font-size: 1.3rem;
+      font-family: "Poppins", sans-serif;
+      color: #fff; }
+  .game-search-box select {
+    padding: 1.5rem;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.3rem; }
+    .game-search-box select:focus {
+      outline: none; }
+  .game-search-box option {
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: #282828; }
+  .game-search-box > * {
+    margin-right: 3rem;
+    margin-bottom: 2rem; }
+  .game-search-box-btn, .game-search-box-btn:link, .game-search-box-btn:visited {
+    padding: 1.5rem 5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #ffba00;
+    background-color: #fff;
+    text-transform: uppercase;
+    transition: all .3s; }
+  .game-search-box-btn:hover {
+    background-color: #282828; }
+
+.news {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/news-bg.jpg);
+  background-size: cover;
+  padding: 10rem; }
+  .news-container {
+    max-width: 70%;
+    margin: 0 auto; }
+  .news-game-title {
+    width: 60%;
+    line-height: 1.1;
+    margin-bottom: 2rem; }
+  .news-game-info {
+    width: 70%;
+    margin-bottom: 2rem; }
+  .news-btn > :not(:last-child) {
+    margin-right: 4rem; }
+  .news-pic {
+    box-shadow: 3px 3px 2.5rem rgba(0, 0, 0, 0.8); }
+
+.blog-news-container {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .blog-news-container > :not(:last-child) {
+    margin-right: 3rem; }
+
+.blog svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #ffba00;
+  padding-right: .5rem; }
+
+.blog-news-info-container {
+  display: flex; }
+  .blog-news-info-container > :not(:last-child) {
+    padding-right: 3rem; }
+
+.blog-news-info-user {
+  display: flex;
+  align-items: center; }
+  .blog-news-info-user p {
+    margin-bottom: 0; }
+
+.blog-news-info-folder {
+  display: flex;
+  align-items: center; }
+  .blog-news-info-folder p {
+    margin-bottom: 0; }
+
+.blog-news-info-time {
+  display: flex;
+  align-items: center; }
+  .blog-news-info-time p {
+    margin-bottom: 0; }
+
+.news-image {
+  width: 100%;
+  height: auto; }
+
+.news-images {
+  padding-bottom: 1rem; }
+
+.about-cloux {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/about-bg.jpg);
+  background-size: cover;
+  padding: 10rem; }
+  .about-cloux-container {
+    max-width: 75%;
+    margin: 0 auto; }
+    .about-cloux-container > :not(:last-child) {
+      margin-right: 8rem; }
+  .about-cloux-game-title {
+    width: 60%;
+    line-height: 1.1;
+    margin-bottom: 2rem; }
+  .about-cloux-game-info {
+    width: 70%;
+    margin-bottom: 2rem; }
+  .about-cloux-btn > :not(:last-child) {
+    margin-right: 4rem; }
+  .about-cloux-pic {
+    box-shadow: 3px 3px 2.5rem rgba(0, 0, 0, 0.8); }
+
+.game-shop-container {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .game-shop-container > :not(:last-child) {
+    margin-right: 3rem; }
+
+.game-shop-image {
+  width: 100%;
+  height: auto; }
+
+.game-shop-images {
+  padding-bottom: 1rem; }
+
+.about-us {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10rem; }
+
+.available-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem; }
+
+.our-games {
+  margin-bottom: 4rem; }
+
+.all-games-btn-container {
+  margin-bottom: 11rem; }
+
+.news {
+  margin-bottom: 10rem; }
+
+.featured-games {
+  margin-bottom: 30rem; }
+
+.blog {
+  margin-bottom: 15rem; }
+
+.about-cloux {
+  margin-bottom: 10rem; }
+
+.game-shop {
+  margin-bottom: 10rem; }
