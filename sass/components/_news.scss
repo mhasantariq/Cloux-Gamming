@@ -4,14 +4,18 @@
   padding: 10rem;
 
   &-container {
-    max-width: 70%;
+    max-width: 80%;
+    @include flex-row;
     margin: 0 auto;
   }
 
   &-game-title {
-    width: 60%;
     line-height: 1.1;
     margin-bottom: 2rem;
+
+    &-info {
+      width: 50%;
+    }
   }
 
   &-game-info {
@@ -23,7 +27,58 @@
     margin-right: 4rem;
   }
 
+  &-game-pic {
+    width: 50%;
+    margin-right: 5rem;
+  }
+
   &-pic {
     box-shadow: 3px 3px 2.5rem rgba($color-black, 0.8);
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: $bp-large) {
+  .news {
+    background-image: linear-gradient(rgba($color-black, 0.6), rgba($color-black, 0.6)), url(../../img/news-bg.jpg);
+    background-size: cover;
+    padding: 5rem;
+
+    &-container {
+      max-width: 100%;
+      @include flex-column;
+      margin: 0 auto;
+    }
+
+    &-game-title {
+      line-height: 1.1;
+      margin-bottom: 2rem;
+
+      &-info {
+        width: 100%;
+        margin-bottom: 5rem;
+      }
+    }
+
+    &-game-info {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    &-btn > :not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    &-game-pic {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &-pic {
+      box-shadow: 3px 3px 2.5rem rgba($color-black, 0.8);
+      width: 100%;
+      height: auto;
+    }
   }
 }

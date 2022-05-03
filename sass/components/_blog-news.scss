@@ -1,7 +1,7 @@
 .blog {
   &-news-container {
     margin: 0 auto;
-    width: 60%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,6 +20,7 @@
 
   &-news-info-container {
     display: flex;
+    font-family: $font-secondary;
 
     & > :not(:last-child) {
       padding-right: 3rem;
@@ -61,4 +62,74 @@
 
 .news-images {
   padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: $bp-largest) {
+  .blog {
+    &-news-container {
+      margin: 0 auto;
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      & > :not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: $color-primary;
+      padding-right: 0.5rem;
+    }
+
+    &-news-info-container {
+      display: flex;
+      font-family: $font-secondary;
+
+      & > :not(:last-child) {
+        padding-right: 3rem;
+      }
+    }
+
+    &-news-info-user {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    &-news-info-folder {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    &-news-info-time {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .news-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .news-images {
+    padding-bottom: 1rem;
+  }
 }

@@ -2,10 +2,10 @@
   &-item {
     list-style: none;
     display: inline-block;
-    padding: 2rem;
+    padding: 1rem;
 
     &:not(:last-child) {
-      margin-right: 3rem;
+      margin-right: 2rem;
     }
   }
 
@@ -22,5 +22,81 @@
     &:hover {
       color: $color-primary;
     }
+  }
+  &-for-small {
+    background-color: $color-white;
+    display: none;
+  }
+
+  &-hamburger {
+    width: 35px;
+    height: 5px;
+    background-color: $color-black;
+    position: relative;
+  }
+
+  &-hamburger::before {
+    content: '';
+    width: 35px;
+    height: 5px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
+
+  &-hamburger::after {
+    content: '';
+    width: 35px;
+    height: 5px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: $bp-extra-large) {
+  .header__nav {
+    display: none;
+
+    &-hamburger {
+      width: 30px;
+      height: 3px;
+      background-color: $color-black;
+      align-self: center;
+      position: absolute;
+      right: 1.5rem;
+    }
+
+    &-hamburger::before {
+      background-color: $color-black;
+      content: '';
+      width: 30px;
+      height: 3px;
+    }
+
+    &-hamburger::after {
+      content: '';
+      width: 30px;
+      height: 3px;
+      background-color: $color-black;
+    }
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header__nav-logo {
+    padding: 1rem;
+  }
+
+  .header__nav-for-small {
+    display: flex;
+    position: relative;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }

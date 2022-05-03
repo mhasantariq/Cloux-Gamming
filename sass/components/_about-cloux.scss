@@ -4,8 +4,9 @@
   padding: 10rem;
 
   &-container {
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
+    @include flex-row;
 
     & > :not(:last-child) {
       margin-right: 8rem;
@@ -13,13 +14,13 @@
   }
 
   &-game-title {
-    width: 60%;
+    width: 100%;
     line-height: 1.1;
     margin-bottom: 2rem;
   }
 
   &-game-info {
-    width: 70%;
+    width: 100%;
     margin-bottom: 2rem;
   }
 
@@ -27,7 +28,37 @@
     margin-right: 4rem;
   }
 
-  &-pic {
+  &-game-pic {
     box-shadow: 3px 3px 2.5rem rgba($color-black, 0.8);
+    width: 100%;
+  }
+
+  &-game-pic-container {
+    width: 50%;
+  }
+
+  &-title-info {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: $bp-large) {
+  .about-cloux {
+    &-container {
+      max-width: 100%;
+      @include flex-column;
+    }
+
+    &-game-pic {
+      display: none;
+    }
+
+    &-game-pic-container {
+      display: none;
+    }
+
+    &-title-info {
+      width: 100%;
+    }
   }
 }

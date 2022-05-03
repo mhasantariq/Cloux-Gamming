@@ -1,6 +1,12 @@
+@media only screen and (max-width: $bp-medium) {
+  .heading-primary {
+    font-size: 5rem;
+  }
+}
+
 .heading-primary {
   font-family: $font-primary;
-  font-size: 8rem;
+  font-size: 7rem;
   letter-spacing: 2px;
   text-transform: uppercase;
 
@@ -28,18 +34,27 @@
     font-size: 2.5rem;
   }
 
+  &-xs {
+    font-size: 2rem;
+  }
+
   &-hover {
     font-family: $font-primary;
-    font-size: 8rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
     transition: all 0.3s;
     cursor: pointer;
 
     &:hover {
       color: $color-primary;
     }
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .heading-primary {
+    font-size: 4rem;
   }
 }
 
@@ -59,14 +74,10 @@
   }
 }
 
-.sample-text {
+.paragraph-text {
   font-family: $font-secondary;
   font-size: 1.5rem;
   line-height: 2.5rem;
-
-  &--sm {
-    font-size: 1.2rem;
-  }
 
   &--light {
     color: $color-white;
@@ -78,5 +89,25 @@
 
   &--dark {
     color: $color-black;
+  }
+
+  &--sm {
+    font-size: 1.2rem;
+  }
+
+  &--xs {
+    font-size: 0.8rem;
+  }
+
+  &-hover {
+    font-family: $font-secondary;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 }

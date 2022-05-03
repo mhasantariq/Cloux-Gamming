@@ -1,7 +1,6 @@
 .our-games {
   &__container {
-    max-width: 60%;
-    min-width: 80%;
+    max-width: 80%;
     margin: 0 auto;
     display: grid;
     // grid-template-columns: repeat(3, 1fr);
@@ -27,6 +26,10 @@
 .poster {
   margin-bottom: 0.5rem;
   position: relative;
+
+  &-game-type {
+    display: flex;
+  }
 }
 
 .game {

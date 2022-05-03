@@ -1,8 +1,4 @@
 .about-us {
-  margin-top: 10rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   margin-bottom: 10rem;
 }
 
@@ -10,7 +6,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 6rem;
+}
+
+.available-on-btn {
+  margin-bottom: 1rem;
 }
 
 .our-games {

@@ -18,12 +18,6 @@
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <!--BOOSTRAP FILES INSTALLED LOCALLY-->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./node_modules/bootstrap/js/src/popover.js"></script>
-
     <!-- <title>Cloux Gaming</title> -->
     <title>Cloux Gaming</title>
   </head>
@@ -32,6 +26,12 @@
       <div class="header__container">
         <div class="header__logo-box">
           <img src="./img/logo-1.png" alt="Cloux Gaming Logo" class="header__logo" />
+        </div>
+
+        <div class="header__nav-for-small">
+          <img src="./img/logo-2.png" alt="Cloux Gaming Logo" class="header__nav-logo" />
+
+          <div class="header__nav-hamburger"></div>
         </div>
 
         <div class="header__flex-column">
@@ -112,12 +112,12 @@
           </div>
 
           <div class="heading-primary heading-primary--light margin-bottom-sm">Egypt and world</div>
-          <div class="sample-text sample-text--light margin-bottom-lg">
+          <div class="paragraph-text paragraph-text--light margin-bottom-lg">
             Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore
           </div>
           <div class="header-btn__container">
-            <button class="btn">Game Details</button>
-            <button class="btn">Buy Now</button>
+            <a href="#" class="btn">Game Details</a>
+            <a href="#" class="btn">Buy Now</a>
           </div>
         </div>
       </div>
@@ -125,43 +125,45 @@
 
     <section class="about-us">
       <div class="about-us__container">
-        <div class="about-us--1">
-          <h4 class="heading-secondary">Our All Games</h4>
-          <h2 class="heading-primary-md heading-primary heading-primary--light">Cloux Games</h2>
-          <p class="sample-text sample-text--light sample-text--sm">
-            Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet
-            dolore magna.
-          </p>
-          <div class="cloux-button">
-            <a href="#" class="about-us__btn"><span>All Games</span></a>
+        <div class="about-us__games">
+          <div class="about-us--1">
+            <h4 class="heading-secondary">Our All Games</h4>
+            <h2 class="heading-primary-md heading-primary heading-primary--light">Cloux Games</h2>
+            <p class="paragraph-text paragraph-text--light paragraph-text--sm">
+              Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet
+              dolore magna.
+            </p>
+            <div class="cloux-button">
+              <a href="#" class="about-us__btn"><span>All Games</span></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="about-us__container">
-        <div class="about-us--2">
-          <h4 class="heading-secondary">Our Developer Tem</h4>
-          <h2 class="heading-primary-md heading-primary heading-primary--light">Cloux Team</h2>
-          <p class="sample-text sample-text--light sample-text--sm">
-            Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet
-            dolore magna.
-          </p>
+        <div class="about-us__team">
+          <div class="about-us--2">
+            <h4 class="heading-secondary">Our Developer Tem</h4>
+            <h2 class="heading-primary-md heading-primary heading-primary--light">Cloux Team</h2>
+            <p class="paragraph-text paragraph-text--light paragraph-text--sm">
+              Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet
+              dolore magna.
+            </p>
 
-          <div class="cloux-button">
-            <a href="#" class="about-us__btn"><span>Read More</span></a>
+            <div class="cloux-button">
+              <a href="#" class="about-us__btn"><span>Read More</span></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="about-us__container">
-        <div class="about-us--3">
-          <h4 class="heading-secondary">Documentations & Support</h4>
-          <h2 class="heading-primary-md heading-primary heading-primary--light">Help Center</h2>
-          <p class="sample-text sample-text--light sample-text--sm">
-            Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet
-            dolore magna.
-          </p>
-          <div class="cloux-button">
-            <a href="#" class="about-us__btn"><span>Contact</span></a>
+        <div class="about-us__help">
+          <div class="about-us--3">
+            <h4 class="heading-secondary">Documentations & Support</h4>
+            <h2 class="heading-primary-md heading-primary heading-primary--light">Help Center</h2>
+            <p class="paragraph-text paragraph-text--light paragraph-text--sm">
+              Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet
+              dolore magna.
+            </p>
+            <div class="cloux-button">
+              <a href="#" class="about-us__btn"><span>Contact</span></a>
+            </div>
           </div>
         </div>
       </div>
@@ -197,7 +199,7 @@
             <a href="#" class="our-games__links"> Steam</a>
           </p>
           <h3 class="heading-primary heading-primary--dark heading-primary-sm heading-primary-hover">Space Wars</h3>
-          <p class="sample-text sample-text--sm sample-text--grey">
+          <p class="paragraph-text paragraph-text--sm paragraph-text--grey">
             Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore
           </p>
         </div>
@@ -222,7 +224,7 @@
           <h3 class="heading-primary heading-primary--dark heading-primary-sm heading-primary-hover">
             Return of the cars
           </h3>
-          <p class="sample-text sample-text--sm sample-text--grey">
+          <p class="paragraph-text paragraph-text--sm paragraph-text--grey">
             Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore
           </p>
         </div>
@@ -247,7 +249,7 @@
           <h3 class="heading-primary heading-primary--dark heading-primary-sm heading-primary-hover">
             Planes of gloria
           </h3>
-          <p class="sample-text sample-text--sm sample-text--grey">
+          <p class="paragraph-text paragraph-text--sm paragraph-text--grey">
             Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore
           </p>
         </div>
@@ -272,7 +274,7 @@
           <h3 class="heading-primary heading-primary--dark heading-primary-sm heading-primary-hover">
             Earth Wars: History
           </h3>
-          <p class="sample-text sample-text--sm sample-text--grey">
+          <p class="paragraph-text paragraph-text--sm paragraph-text--grey">
             Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore
           </p>
         </div>
@@ -295,7 +297,7 @@
             <a href="#" class="our-games__links"> Steam</a>
           </p>
           <h3 class="heading-primary heading-primary--dark heading-primary-sm heading-primary-hover">The Warrior 3</h3>
-          <p class="sample-text sample-text--sm sample-text--grey">
+          <p class="paragraph-text paragraph-text--sm paragraph-text--grey">
             Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore
           </p>
         </div>
@@ -320,7 +322,7 @@
           <h3 class="heading-primary heading-primary--dark heading-primary-sm heading-primary-hover">
             Life and Struggle
           </h3>
-          <p class="sample-text sample-text--sm sample-text--grey">
+          <p class="paragraph-text paragraph-text--sm paragraph-text--grey">
             Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore
           </p>
         </div>
@@ -345,7 +347,7 @@
           <h3 class="heading-primary heading-primary--dark heading-primary-sm heading-primary-hover">
             Gloria Soccer 2018
           </h3>
-          <p class="sample-text sample-text--sm sample-text--grey">
+          <p class="paragraph-text paragraph-text--sm paragraph-text--grey">
             Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore
           </p>
         </div>
@@ -370,7 +372,7 @@
           <h3 class="heading-primary heading-primary--dark heading-primary-sm heading-primary-hover">
             Egypt and world
           </h3>
-          <p class="sample-text sample-text--sm sample-text--grey">
+          <p class="paragraph-text paragraph-text--sm paragraph-text--grey">
             Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore
           </p>
         </div>
@@ -425,13 +427,13 @@
     </div>
 
     <div class="news">
-      <div class="news-container flex-row">
+      <div class="news-container">
         <div class="news-game-title-info">
           <div class="news-game-title heading-primary heading-primary--light heading-primary-lg">
             FIFA SOCCER 18
             <span class="heading-primary--primary">is released</span>
           </div>
-          <p class="news-game-info sample-text sample-text--light sample-text--sm">
+          <p class="news-game-info paragraph-text paragraph-text--light paragraph-text--sm">
             Amet nisl purus in mollis nunc sed id. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Volutpat
             ac tincidunt vitae semper. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus
             faucibus. Ante metus dictum at tempor fames ac
@@ -462,17 +464,23 @@
 
             <div class="featured-games-poster-game-type position-absolute-bl">
               <h3 class="heading-primary heading-primary--light heading-primary-sm">Space Wars</h3>
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-display"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Playstation 4</a> ,
-              <a href="#" class="featured-games__links"> Steam</a>
-              &nbsp;
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Action</a> ,
-              <a href="#" class="featured-games__links">Adventure</a>
+              <div class="flex-row">
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-display"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+                &nbsp;
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -485,17 +493,23 @@
             </div>
             <div class="featured-games-poster-game-type position-absolute-bl">
               <h3 class="heading-primary heading-primary--light heading-primary-sm">Return of the cars</h3>
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-display"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Playstation 4</a> ,
-              <a href="#" class="featured-games__links"> Steam</a>
-              &nbsp;
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Action</a> ,
-              <a href="#" class="featured-games__links">Adventure</a>
+              <div class="flex-row">
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-display"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+                &nbsp;
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -507,17 +521,23 @@
             </div>
             <div class="featured-games-poster-game-type position-absolute-bl">
               <h3 class="heading-primary heading-primary--light heading-primary-sm">Planes of Gloria</h3>
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-display"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Playstation 4</a> ,
-              <a href="#" class="featured-games__links"> Steam</a>
-              &nbsp;
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Action</a> ,
-              <a href="#" class="featured-games__links">Adventure</a>
+              <div class="flex-row">
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-display"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+                &nbsp;
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -529,17 +549,23 @@
             </div>
             <div class="featured-games-poster-game-type position-absolute-bl">
               <h3 class="heading-primary heading-primary--light heading-primary-sm">Earth Wars: History</h3>
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-display"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Playstation 4</a> ,
-              <a href="#" class="featured-games__links"> Steam</a>
-              &nbsp;
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Action</a> ,
-              <a href="#" class="featured-games__links">Adventure</a>
+              <div class="flex-row">
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-display"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+                &nbsp;
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -551,17 +577,23 @@
             </div>
             <div class="featured-games-poster-game-type position-absolute-bl">
               <h3 class="heading-primary heading-primary--light heading-primary-sm">The Warrior 3</h3>
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-display"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Playstation 4</a> ,
-              <a href="#" class="featured-games__links"> Steam</a>
-              &nbsp;
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Action</a> ,
-              <a href="#" class="featured-games__links">Adventure</a>
+              <div class="flex-row">
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-display"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+                &nbsp;
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -573,17 +605,23 @@
             </div>
             <div class="featured-games-poster-game-type position-absolute-bl">
               <h3 class="heading-primary heading-primary--light heading-primary-sm">Life and Struggle</h3>
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-display"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Playstation 4</a> ,
-              <a href="#" class="featured-games__links"> Steam</a>
-              &nbsp;
-              <svg class="main__icon">
-                <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
-              </svg>
-              <a href="#" class="featured-games__links">Action</a> ,
-              <a href="#" class="featured-games__links">Adventure</a>
+              <div class="flex-row">
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-display"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+                &nbsp;
+                <p class="avialable-on flex-row">
+                  <svg class="main__icon">
+                    <use xlink:href="img/sprite_1.svg#icon-price-tags"></use>
+                  </svg>
+                  <a href="#" class="our-games__links">Playstation 4 ,</a>
+                  <a href="#" class="our-games__links"> Steam</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -603,7 +641,7 @@
           <h3 class="heading-primary heading-primary--grey heading-primary-md heading-primary-hover">
             Price list of the games
           </h3>
-          <p class="sample-text sample-text--dark sample-text--sm">
+          <p class="paragraph-text paragraph-text--dark paragraph-text--sm">
             Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper massa sapien faucibus
           </p>
           <div class="blog-news-info-container">
@@ -634,7 +672,7 @@
           <h3 class="heading-primary heading-primary--grey heading-primary-md heading-primary-hover">
             Price list of the games
           </h3>
-          <p class="sample-text sample-text--dark sample-text--sm">
+          <p class="paragraph-text paragraph-text--dark paragraph-text--sm">
             Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper massa sapien faucibus
           </p>
           <div class="blog-news-info-container">
@@ -665,7 +703,7 @@
           <h3 class="heading-primary heading-primary--grey heading-primary-md heading-primary-hover">
             Price list of the games
           </h3>
-          <p class="sample-text sample-text--dark sample-text--sm">
+          <p class="paragraph-text paragraph-text--dark paragraph-text--sm">
             Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper massa sapien faucibus
           </p>
           <div class="blog-news-info-container">
@@ -693,15 +731,15 @@
     </section>
 
     <div class="about-cloux">
-      <div class="about-cloux-container flex-row">
-        <div class="about-cloux-game-pic">
-          <img src="./img/about-1.jpg" alt="" class="news-pic" />
+      <div class="about-cloux-container">
+        <div class="about-cloux-game-pic-container">
+          <img src="./img/about-1.jpg" alt="" class="about-cloux-game-pic" />
         </div>
-        <div class="about-cloux-game-title-info">
+        <div class="about-cloux-title-info">
           <div class="about-cloux-game-title heading-primary heading-primary--light heading-primary-lg">
             About the <span class="heading-primary--primary">Cloux</span>
           </div>
-          <p class="about-cloux-game-info sample-text sample-text--light sample-text--sm">
+          <p class="about-cloux-game-info paragraph-text paragraph-text--light paragraph-text--sm">
             Amet nisl purus in mollis nunc sed id. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Volutpat
             ac tincidunt vitae semper. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus
             faucibus. Ante metus dictum at tempor fames ac
@@ -719,30 +757,32 @@
       </h2>
 
       <div class="game-shop-container">
-        <div class="news-1">
+        <div class="game-shop-item">
           <div class="game-shop-images">
             <img src="./img/shop-1.jpg" alt="" class="game-shop-image" />
           </div>
-          <h3 class="heading-primary heading-primary--grey heading-primary-sm heading-primary-hover">Game Pack DVD</h3>
-          <div class="price heading-primary heading-primary--primary heading-primary-sm">$ 56.00</div>
+          <h3 class="heading-primary heading-primary--grey heading-primary-xs heading-primary-hover">Game Pack DVD</h3>
+          <div class="price heading-primary heading-primary--primary heading-primary-xs">&euro; <span>56.00</span></div>
         </div>
-        <div class="game-shop-1">
+        <div class="game-shop-item">
           <div class="game-shop-images">
             <img src="./img/shop-2.jpg" alt="" class="game-shop-image" />
           </div>
-          <h3 class="heading-primary heading-primary--grey heading-primary-sm heading-primary-hover">
+          <h3 class="heading-primary heading-primary--grey heading-primary-xs heading-primary-hover">
             Gaming Headphones
           </h3>
-          <div class="price heading-primary heading-primary--primary heading-primary-sm">$ 390.79</div>
+          <div class="price heading-primary heading-primary--primary heading-primary-xs">
+            &euro; <span>390.79</span>
+          </div>
         </div>
-        <div class="game-shop-1">
+        <div class="game-shop-item">
           <div class="game-shop-images">
             <img src="./img/shop-3.jpg" alt="" class="game-shop-image" />
           </div>
-          <h3 class="heading-primary heading-primary--grey heading-primary-sm heading-primary-hover">
+          <h3 class="heading-primary heading-primary--grey heading-primary-xs heading-primary-hover">
             Pulse Headphones
           </h3>
-          <div class="price heading-primary heading-primary--primary heading-primary-sm">$ 355.00</div>
+          <div class="price heading-primary heading-primary--primary heading-primary-xs">&euro;<span>355.00</span></div>
         </div>
       </div>
     </div>
@@ -798,11 +838,248 @@
           </svg>
           <div class="social-desc">Twitch</div>
         </div>
-
-        <footer class="footer">
-          <div class="footer-container"></div>
-        </footer>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer__about-us">
+          <h5 class="heading-primary heading-primary--light heading-primary-sm margin-bottom-sm">
+            About &nbsp;<span class="heading-primary--primary">Us</span>
+          </h5>
+          <p class="paragraph-text paragraph-text--light paragraph-text--sm margin-bottom-md">
+            Amet nisl purus in mollis nunc sed id. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Volutpat
+            a tincidunt vitae semper pellentesque diam volutpat.
+          </p>
+          <ul class="footer__list">
+            <li>
+              <svg class="footer__list-icon">
+                <use xlink:href="img/sprite_4.svg#icon-chevron-right"></use>
+              </svg>
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">Home</p>
+            </li>
+            <li>
+              <svg class="footer__list-icon">
+                <use xlink:href="img/sprite_4.svg#icon-chevron-right"></use>
+              </svg>
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">Games</p>
+            </li>
+            <li>
+              <svg class="footer__list-icon">
+                <use xlink:href="img/sprite_4.svg#icon-chevron-right"></use>
+              </svg>
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">Blog</p>
+            </li>
+            <li>
+              <svg class="footer__list-icon">
+                <use xlink:href="img/sprite_4.svg#icon-chevron-right"></use>
+              </svg>
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">About</p>
+            </li>
+            <li>
+              <svg class="footer__list-icon">
+                <use xlink:href="img/sprite_4.svg#icon-chevron-right"></use>
+              </svg>
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">Team</p>
+            </li>
+            <li>
+              <svg class="footer__list-icon">
+                <use xlink:href="img/sprite_4.svg#icon-chevron-right"></use>
+              </svg>
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">Community</p>
+            </li>
+            <li>
+              <svg class="footer__list-icon">
+                <use xlink:href="img/sprite_4.svg#icon-chevron-right"></use>
+              </svg>
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">eSport</p>
+            </li>
+            <li>
+              <svg class="footer__list-icon">
+                <use xlink:href="img/sprite_4.svg#icon-chevron-right"></use>
+              </svg>
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">Contact</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__latest-news">
+          <h5 class="heading-primary heading-primary--light heading-primary-sm margin-bottom-sm">
+            Latest &nbsp;<span class="heading-primary--primary">News</span>
+          </h5>
+          <div class="footer__latest-news-post">
+            <img src="./img/latest-news-1.jpg" alt="" class="footer__latest-news-post-img" />
+            <div class="latest__news-description">
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">About space and world</p>
+              <div class="flex-row">
+                <svg class="footer__latest-icon">
+                  <use xlink:href="img/sprite_3.svg#icon-clock"></use>
+                </svg>
+                <p class="paragraph-text paragraph-text--light paragraph-text--sm">January 8, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__latest-news-post">
+            <img src="./img/latest-news-2.jpg" alt="" class="footer__latest-news-post-img" />
+            <div class="latest__news-description">
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">About space and world</p>
+              <div class="flex-row">
+                <svg class="footer__latest-icon">
+                  <use xlink:href="img/sprite_3.svg#icon-clock"></use>
+                </svg>
+                <p class="paragraph-text paragraph-text--light paragraph-text--sm">January 8, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__latest-news-post">
+            <img src="./img/latest-news-3.jpg" alt="" class="footer__latest-news-post-img" />
+            <div class="latest__news-description">
+              <p class="paragraph-text paragraph-text--light paragraph-text--sm">About space and world</p>
+              <div class="flex-row">
+                <svg class="footer__latest-icon">
+                  <use xlink:href="img/sprite_3.svg#icon-clock"></use>
+                </svg>
+                <p class="paragraph-text paragraph-text--light paragraph-text--sm">January 8, 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__supported-apps">
+          <h5 class="heading-primary heading-primary--light heading-primary-sm margin-bottom-sm">
+            Apps &nbsp;<span class="heading-primary--primary">& Platforms</span>
+          </h5>
+          <ul class="footer__supported-platforms">
+            <li>
+              <div class="footer__supported-app">
+                <svg class="footer__supported-icon">
+                  <use xlink:href="img/sprite_5.svg#icon-appleinc"></use>
+                  <p class="paragraph-text paragraph-text--light paragraph-text--sm">
+                    Buy Now via
+                    <br />
+                    <b class="paragraph-text paragraph-text--light paragraph-text--sm">Apple Store</b>
+                  </p>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="footer__supported-app">
+                <svg class="footer__supported-icon">
+                  <use xlink:href="img/sprite_5.svg#icon-controller-play"></use>
+                  <p class="paragraph-text paragraph-text--light paragraph-text--sm">
+                    Buy Now via
+                    <br />
+                    <b class="paragraph-text paragraph-text--light paragraph-text--sm">Apple Store</b>
+                  </p>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="footer__supported-app">
+                <svg class="footer__supported-icon">
+                  <use xlink:href="img/sprite_5.svg#icon-steam"></use>
+                  <p class="paragraph-text paragraph-text--light paragraph-text--sm">
+                    Buy Now via
+                    <br />
+                    <b class="paragraph-text paragraph-text--light paragraph-text--sm">Apple Store</b>
+                  </p>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="footer__supported-app">
+                <svg class="footer__supported-icon">
+                  <use xlink:href="img/sprite_5.svg#icon-windows8"></use>
+                  <p class="paragraph-text paragraph-text--light paragraph-text--sm">
+                    Buy Now via
+                    <br />
+                    <b class="paragraph-text paragraph-text--light paragraph-text--sm">Apple Store</b>
+                  </p>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="footer__supported-app">
+                <svg class="footer__supported-icon">
+                  <use xlink:href="img/sprite_5.svg#icon-amazon"></use>
+                  <p class="paragraph-text paragraph-text--light paragraph-text--sm">
+                    Buy Now via
+                    <br />
+                    <b class="paragraph-text paragraph-text--light paragraph-text--sm">Apple Store</b>
+                  </p>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="footer__supported-app">
+                <svg class="footer__supported-icon">
+                  <use xlink:href="img/sprite_5.svg#icon-paypal"></use>
+                  <p class="paragraph-text paragraph-text--light paragraph-text--sm">
+                    Buy Now via
+                    <br />
+                    <b class="paragraph-text paragraph-text--light paragraph-text--sm">Apple Store</b>
+                  </p>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact-us">
+          <h5 class="heading-primary heading-primary--light heading-primary-sm margin-bottom-sm">
+            Contact &nbsp;<span class="heading-primary--primary">Us</span>
+          </h5>
+          <div class="flex-row">
+            <svg class="footer__latest-icon">
+              <use xlink:href="img/sprite_6.svg#icon-location"></use>
+            </svg>
+            <p class="paragraph-text paragraph-text--light paragraph-text--sm">January 8, 2022</p>
+          </div>
+          <div class="flex-row">
+            <svg class="footer__latest-icon">
+              <use xlink:href="img/sprite_6.svg#icon-envelop"></use>
+            </svg>
+            <p class="paragraph-text paragraph-text--light paragraph-text--sm">January 8, 2022</p>
+          </div>
+          <div class="flex-row">
+            <svg class="footer__latest-icon">
+              <use xlink:href="img/sprite_6.svg#icon-phone"></use>
+            </svg>
+            <p class="paragraph-text paragraph-text--light paragraph-text--sm">January 8, 2022</p>
+          </div>
+          <div class="flex-row">
+            <svg class="footer__latest-icon">
+              <use xlink:href="img/sprite_6.svg#icon-fax"></use>
+            </svg>
+            <p class="paragraph-text paragraph-text--light paragraph-text--sm">January 8, 2022</p>
+          </div>
+
+          <p class="paragraph-text paragraph-text--light paragraph-text--sm">
+            Lorem ipsum dolor sit amet, <strong>voluptua iracundia disputationi an pri</strong>, his utinam principes
+            dignissim ad. Ne nec dolore oblique nusquam, <u>cu luptatum volutpat delicatissimi has.</u> Sed ad dicam
+            platonem, mea eros illum elitr id ei has.
+          </p>
+        </div>
+      </div>
+      <div class="footer__navigation">
+        <div class="footer__navigation-container">
+          <h5 class="footer__navigation-header heading-primary heading-primary--light heading-primary-sm">
+            Cloux<span class="heading-primary--primary">Game</span>
+          </h5>
+          <p class="footer__copyright paragraph-text paragraph-text--light paragraph-text--sm">
+            Copyright © 2018 Cloux - All rights reserved.
+          </p>
+          <ul class="footer__nav">
+            <li class="paragraph-text paragraph-text-hover paragraph-text--light paragraph-text--xs">Home</li>
+            <li class="paragraph-text paragraph-text-hover paragraph-text--light paragraph-text--xs">Help Center</li>
+            <li class="paragraph-text paragraph-text-hover paragraph-text--light paragraph-text--xs">Contact</li>
+            <li class="paragraph-text paragraph-text-hover paragraph-text--light paragraph-text--xs">Career</li>
+            <li class="paragraph-text paragraph-text-hover paragraph-text--light paragraph-text--xs">Advertise</li>
+            <li class="paragraph-text paragraph-text-hover paragraph-text--light paragraph-text--xs">
+              Terms and condition
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

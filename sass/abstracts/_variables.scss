@@ -2,12 +2,16 @@ $color-black: #000;
 $color-white: #fff;
 $color-grey: #999999;
 
+$color-footer-main: #111111;
+$color-footer-navigation: #070707;
+
 $color-primary: #ffba00;
 
 $font-primary: 'Titillium Web', sans-serif;
 $font-secondary: 'Poppins', sans-serif;
 
-$grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
-$gutter-horizontal: 6rem;
+$bp-extra-large: 87.5em; //1600px
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px

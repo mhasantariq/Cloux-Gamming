@@ -1,13 +1,15 @@
 .social {
   &-icons-container {
+    width: 60%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 6rem;
+    padding: 5rem;
 
     & > :not(:last-child) {
-      margin-right: 10rem;
+      margin-right: 5rem;
     }
   }
 
@@ -16,22 +18,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     cursor: pointer;
   }
 
   &-icon {
-    height: 4rem;
-    width: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     fill: $color-primary;
     margin-bottom: 1rem;
   }
 
   &-desc {
-    font-size: 1.5rem;
+    display: inline-block;
+    font-size: 1.3rem;
     font-weight: 700;
     text-transform: uppercase;
     font-family: $font-secondary;
     transition: all 0.4s;
+    text-align: center;
 
     &:hover {
       color: $color-primary;
@@ -40,5 +45,46 @@
 
   &-icons:hover &-desc {
     color: $color-primary;
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .social {
+    &-icons-container {
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 6rem;
+
+      & > :not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+
+    &-icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &-icon {
+      height: 3.5rem;
+      width: 3.5rem;
+      fill: $color-primary;
+      margin-bottom: 1rem;
+    }
+
+    &-desc {
+      display: none;
+    }
+
+    &-icons:hover &-desc {
+      color: $color-primary;
+    }
   }
 }

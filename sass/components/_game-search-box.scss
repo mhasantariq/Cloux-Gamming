@@ -54,12 +54,13 @@
   &-btn,
   &-btn:link,
   &-btn:visited {
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 8rem;
     text-decoration: none;
     font-size: 1.3rem;
     color: $color-primary;
     background-color: $color-white;
     text-transform: uppercase;
+    font-family: $font-secondary;
     transition: all 0.3s;
   }
 

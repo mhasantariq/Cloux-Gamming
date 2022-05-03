@@ -6,6 +6,10 @@
   position: relative;
   padding-top: 3rem;
 
+  &__info {
+    width: 80%;
+  }
+
   &__container {
     margin: 0 25rem;
     display: flex;
@@ -13,8 +17,14 @@
     align-items: center;
   }
 
+  &__logo-box {
+    margin-right: 2rem;
+  }
+
   &__icons {
     align-self: flex-end;
+    @include flex-row;
+    margin-bottom: 2rem;
   }
 
   &__icon {
@@ -24,7 +34,7 @@
     transition: all 0.2s;
 
     &:not(:last-child) {
-      margin-right: 0.8rem;
+      margin-right: 2rem;
     }
 
     &:hover {
@@ -56,6 +66,8 @@
   .avialable-on {
     font-size: 1.5rem;
     color: $color-white;
+    display: flex;
+    align-items: center;
   }
 
   &__info {
@@ -63,9 +75,10 @@
     text-align: center;
 
     & svg {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
       fill: $color-primary;
+      padding-right: 1rem;
     }
   }
 
@@ -74,7 +87,9 @@
     flex-direction: column;
   }
 
-  .btn {
+  .btn,
+  .btn:link,
+  .btn:visited {
     color: $color-white;
     border-bottom: 1.5px solid $color-white;
     font-size: 1.4rem;
@@ -83,19 +98,17 @@
     font-family: $font-secondary;
     text-transform: uppercase;
     transition: all 0.5s;
+    background-color: transparent;
+    text-decoration: none;
+  }
 
-    &:not(:last-child) {
-      margin-right: 4rem;
-    }
+  .btn:not(:last-child) {
+    margin-right: 4rem;
+  }
 
-    &:hover {
-      color: $color-primary;
-      border-bottom: 1.5px solid $color-primary;
-    }
-
-    &:active {
-      border: 0;
-    }
+  .btn:hover {
+    color: $color-primary;
+    border-bottom: 1.5px solid $color-primary;
   }
 
   &__buttons {
@@ -109,6 +122,7 @@
     background-color: $color-primary;
     text-decoration: none;
     padding: 0.6rem 1.5rem;
+    font-family: $font-secondary;
     border-top-left-radius: 4rem;
     border-bottom-left-radius: 4rem;
     text-transform: uppercase;
@@ -118,6 +132,8 @@
 
   &__login-signup-btn::before {
     content: 'Login';
+    z-index: 10;
+    border-right: 1px solid rgba($color-grey, 0.3);
     color: $color-white;
     font-size: 1rem;
     background-color: $color-primary;
@@ -146,5 +162,17 @@
     position: absolute;
     right: -6.6rem;
     top: -1.5px;
+  }
+}
+
+@media only screen and (max-width: $bp-extra-large) {
+  .header {
+    &__icons {
+      display: none;
+    }
+
+    &__logo-box {
+      display: none;
+    }
   }
 }
