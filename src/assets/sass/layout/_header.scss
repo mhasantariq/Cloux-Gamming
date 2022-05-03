@@ -1,5 +1,6 @@
 .header {
-  background-image: linear-gradient(rgba($color-black, 0.3), rgba($color-black, 0.3)), url(../../img/slider_1.jpg);
+  background-image: linear-gradient(rgba($color-black, 0.3), rgba($color-black, 0.3)),
+    url(~/src/assets/img/slider_1.jpg);
   background-size: cover;
   height: 100vh;
   background-position: center;

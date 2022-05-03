@@ -2,19 +2,22 @@
   margin-top: 10rem;
 
   &--1 {
-    background-image: linear-gradient(rgba($color-black, 0.2), rgba($color-black, 0.2)), url(../../img/box-1-bg.jpg);
+    background-image: linear-gradient(rgba($color-black, 0.2), rgba($color-black, 0.2)),
+      url(~/src/assets/img/box-1-bg.jpg);
     background-size: cover;
     padding: 5rem;
   }
 
   &--2 {
-    background-image: linear-gradient(rgba($color-black, 0.2), rgba($color-black, 0.2)), url(../../img/box-2-bg.jpg);
+    background-image: linear-gradient(rgba($color-black, 0.2), rgba($color-black, 0.2)),
+      url(~/src/assets/img/box-2-bg.jpg);
     background-size: cover;
     padding: 5rem;
   }
 
   &--3 {
-    background-image: linear-gradient(rgba($color-black, 0.2), rgba($color-black, 0.2)), url(../../img/box-3-bg.jpg);
+    background-image: linear-gradient(rgba($color-black, 0.2), rgba($color-black, 0.2)),
+      url(~/src/assets/img/box-3-bg.jpg);
     background-size: cover;
     padding: 5rem;
   }

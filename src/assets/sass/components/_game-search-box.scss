@@ -1,5 +1,6 @@
 .game-search-box {
-  background-image: linear-gradient(rgba($color-primary, 0.6), rgba($color-primary, 0.6)), url(../../img/search-1.jpg);
+  background-image: linear-gradient(rgba($color-primary, 0.6), rgba($color-primary, 0.6)),
+    url(~/src/assets/img/search-1.jpg);
   background-size: cover;
   display: flex;
   align-items: center;

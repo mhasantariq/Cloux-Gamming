@@ -1,5 +1,5 @@
 .news {
-  background-image: linear-gradient(rgba($color-black, 0.6), rgba($color-black, 0.6)), url(../../img/news-bg.jpg);
+  background-image: linear-gradient(rgba($color-black, 0.6), rgba($color-black, 0.6)), url(~/src/assets/img/news-bg.jpg);
   background-size: cover;
   padding: 10rem;
 
@@ -41,7 +41,8 @@
 
 @media only screen and (max-width: $bp-large) {
   .news {
-    background-image: linear-gradient(rgba($color-black, 0.6), rgba($color-black, 0.6)), url(../../img/news-bg.jpg);
+    background-image: linear-gradient(rgba($color-black, 0.6), rgba($color-black, 0.6)),
+      url(~/src/assets/img/news-bg.jpg);
     background-size: cover;
     padding: 5rem;
 
