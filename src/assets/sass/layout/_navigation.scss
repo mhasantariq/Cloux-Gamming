@@ -11,6 +11,7 @@
 
   &-link {
     transition: all 0.2s;
+
     &:link,
     &:visited {
       color: $color-white;
@@ -22,6 +23,7 @@
       color: $color-primary;
     }
   }
+
   &-for-small {
     background-color: $color-white;
     display: none;
@@ -92,6 +94,7 @@
   .header__nav-for-small {
     display: flex;
     position: relative;
+    z-index: 1000;
 
     width: 100%;
     position: fixed;
