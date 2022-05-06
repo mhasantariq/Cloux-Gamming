@@ -111,3 +111,16 @@
     }
   }
 }
+
+@media only screen and (max-width: $bp-small) {
+  .heading-primary {
+    font-family: $font-primary;
+    font-size: 7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &-sm {
+      font-size: 2.5rem;
+    }
+  }
+}
