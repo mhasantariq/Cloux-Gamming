@@ -7,6 +7,10 @@
     max-width: 80%;
     @include flex-row;
     margin: 0 auto;
+
+    & > :not(:last-child) {
+      margin-right: 5rem;
+    }
   }
 
   &-game-title {
@@ -29,7 +33,6 @@
 
   &-game-pic {
     width: 50%;
-    margin-right: 5rem;
   }
 
   &-pic {
@@ -50,6 +53,10 @@
       max-width: 100%;
       @include flex-column;
       margin: 0 auto;
+
+      & > :not(:last-child) {
+        margin-right: 0;
+      }
     }
 
     &-game-title {
