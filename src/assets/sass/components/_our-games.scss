@@ -12,10 +12,15 @@
   &__links:visited {
     text-transform: uppercase;
     color: $color-grey;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-family: $font-secondary;
     text-decoration: none;
     transition: all 0.3s;
+  }
+
+  &__links--white:link,
+  &__links--white:visited {
+    color: $color-white;
   }
 
   &__links:hover {
