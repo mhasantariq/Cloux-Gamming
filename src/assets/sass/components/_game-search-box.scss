@@ -76,3 +76,13 @@
     background-color: #282828;
   }
 }
+
+@media only screen and (max-width: $bp-small) {
+  .game-search-box {
+    flex-direction: column;
+    & > * {
+      margin-right: 0rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
