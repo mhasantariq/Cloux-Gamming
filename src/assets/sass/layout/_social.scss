@@ -50,31 +50,9 @@
 
 @media only screen and (max-width: $bp-medium) {
   .social {
-    &-icons-container {
-      width: 60%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      padding: 6rem;
-
-      & > :not(:last-child) {
-        margin-right: 3rem;
-      }
-    }
-
-    &-icons {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-    }
-
     &-icon {
-      height: 3.5rem;
-      width: 3.5rem;
+      height: 3rem;
+      width: 3rem;
       fill: $color-primary;
       margin-bottom: 1rem;
     }
@@ -82,9 +60,22 @@
     &-desc {
       display: none;
     }
+  }
+}
 
-    &-icons:hover &-desc {
-      color: $color-primary;
+@media only screen and (max-width: $bp-small) {
+  .social {
+    &-icons-container {
+      & > :not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+
+    &-icon {
+      width: 2.8rem;
+      height: 2.8rem;
+      fill: $color-primary;
+      margin-bottom: 1rem;
     }
   }
 }
