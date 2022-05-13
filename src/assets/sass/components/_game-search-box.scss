@@ -29,15 +29,21 @@
     }
   }
 
-  select {
+  .select {
     padding: 1.5rem;
     background: transparent;
     border: 1px solid $color-white;
     color: $color-white;
     font-size: 1.3rem;
+    width: 100%;
+    height: 100%;
 
     &:focus {
       outline: none;
+    }
+
+    &-container {
+      width: 20rem;
     }
   }
 
@@ -56,6 +62,7 @@
   &-btn:link,
   &-btn:visited {
     padding: 1.5rem 8rem;
+    width: 20rem;
     text-decoration: none;
     font-size: 1.3rem;
     color: $color-primary;
