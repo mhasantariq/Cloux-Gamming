@@ -1,0 +1,101 @@
+.login-form {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+
+  &__signin-btn,
+  &__signin-btn:link,
+  &__signin-btn:visited {
+    padding: 2rem 2.5rem;
+    border: 1px solid $color-primary;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $color-primary;
+    color: $color-white;
+    font-weight: 700;
+    transition: all 0.3s;
+    font-family: $font-secondary;
+
+    &:hover {
+      background-color: $color-black-light;
+      color: $color-white;
+      cursor: pointer;
+    }
+  }
+
+  &-link-container {
+    @include flex-row-between;
+
+    a:link,
+    a:visited {
+      font-size: 1.2rem;
+      font-family: $font-secondary;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__header {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: 700;
+  }
+
+  input[type='email'],
+  input[type='password'] {
+    padding: 1.5rem;
+    width: 100%;
+    border: 1px solid $color-grey-light;
+    background: transparent;
+    outline: 0;
+    color: $color-grey-dark;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      font-size: 1.3rem;
+      font-family: $font-secondary;
+      color: $color-grey;
+    }
+  }
+
+  &-container {
+    margin: 0 auto;
+    padding: 0 5rem;
+
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.login-checkbox {
+  @include flex-row-nocenter;
+
+  input {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+    font-family: $font-secondary;
+    text-transform: capitalize;
+    color: $color-grey;
+  }
+
+  & :first-child {
+    margin-right: 0.8rem;
+  }
+}
