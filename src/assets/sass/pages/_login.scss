@@ -99,3 +99,11 @@
     margin-right: 0.8rem;
   }
 }
+
+@media only screen and (max-width: $bp-small) {
+  .login-form {
+    padding: 0rem;
+    margin-top: 5rem;
+  }
+}
+
