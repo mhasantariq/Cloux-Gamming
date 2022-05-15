@@ -81,3 +81,11 @@
     }
   }
 }
+
+@media only screen and (max-width: $bp-small) {
+  .navigation-menu {
+    &-container {
+      width: 30rem;
+    }
+  }
+}
