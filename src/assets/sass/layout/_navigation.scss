@@ -30,16 +30,24 @@
   }
 
   &-hamburger {
-    width: 35px;
-    height: 5px;
+    width: 1.8rem;
+    height: 3px;
     background-color: $color-black;
     position: relative;
   }
 
+  &-checkbox {
+    display: block;
+  }
+
+  &-checkbox:checked ~ .navigation-menu-container {
+    transform: translateX(0);
+  }
+
   &-hamburger::before {
     content: '';
-    width: 35px;
-    height: 5px;
+    width: 1.8rem;
+    height: 3px;
     position: absolute;
     top: -10px;
     left: 0;
@@ -47,8 +55,8 @@
 
   &-hamburger::after {
     content: '';
-    width: 35px;
-    height: 5px;
+    width: 1.8rem;
+    height: 3px;
     position: absolute;
     top: 10px;
     left: 0;
@@ -60,8 +68,6 @@
     display: none;
 
     &-hamburger {
-      width: 30px;
-      height: 3px;
       background-color: $color-black;
       align-self: center;
       position: absolute;
@@ -71,14 +77,11 @@
     &-hamburger::before {
       background-color: $color-black;
       content: '';
-      width: 30px;
-      height: 3px;
     }
 
     &-hamburger::after {
       content: '';
-      width: 30px;
-      height: 3px;
+
       background-color: $color-black;
     }
   }
