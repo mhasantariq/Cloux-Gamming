@@ -16,12 +16,60 @@
     />
 
     <link rel="stylesheet" href="./assets/sass/main.scss" />
+
     <!-- <link rel="stylesheet" href=""> -->
 
     <!-- <title>Cloux Gaming</title> -->
     <title>Cloux Gaming</title>
   </head>
   <body>
+    <input type="checkbox" name="" id="toggle" class="header__nav-checkbox" />
+
+    <div class="navigation-menu-container">
+      <div class="navigation-menu">
+        <div class="navigation-menu-logobox">
+          <img src="~/src/assets/img/logo-2.png" alt="Cloux Gaming Logo" class="navigation-menu-logo" />
+        </div>
+
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Games</a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="">eSport</a></li>
+          <li><a href="">Pages</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+
+        <div class="navigation-menu__social flex-row">
+          <svg class="navigation-menu__social-icon">
+            <use xlink:href="~/src/assets/img/sprite.svg#icon-facebook"></use>
+          </svg>
+          <svg class="navigation-menu__social-icon">
+            <use xlink:href="~/src/assets/img/sprite.svg#icon-twitter"></use>
+          </svg>
+          <svg class="navigation-menu__social-icon">
+            <use xlink:href="~/src/assets/img/sprite.svg#icon-google-plus"></use>
+          </svg>
+          <svg class="navigation-menu__social-icon">
+            <use xlink:href="~/src/assets/img/sprite.svg#icon-youtube"></use>
+          </svg>
+          <svg class="navigation-menu__social-icon">
+            <use xlink:href="~/src/assets/img/sprite.svg#icon-instagram"></use>
+          </svg>
+          <svg class="navigation-menu__social-icon">
+            <use xlink:href="~/src/assets/img/sprite.svg#icon-twitch"></use>
+          </svg>
+        </div>
+
+        <div class="navigation-menu-btn-container">
+          <a href="../src/login.html" class="navigation-menu-btn"> LOGIN </a>
+          <a href="" class="navigation-menu-btn"> SIGNUp </a>
+        </div>
+      </div>
+    </div>
+
     <header class="header">
       <div class="header__container">
         <div class="header__logo-box">
@@ -31,7 +79,9 @@
         <div class="header__nav-for-small">
           <img src="~/src/assets/img/logo-2.png" alt="Cloux Gaming Logo" class="header__nav-logo" />
 
-          <div class="header__nav-hamburger"></div>
+          <label for="toggle" class="header__nav-hamburger">
+            <span class="header__nav-hamburger">&nbsp;</span>
+          </label>
         </div>
 
         <div class="header__flex-column">
