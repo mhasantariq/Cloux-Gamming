@@ -38,6 +38,7 @@
       padding-bottom: 1.8rem;
       text-decoration: none;
       transition: all 0.3s;
+
       &:hover {
         color: $color-primary;
       }
@@ -46,7 +47,7 @@
 
   &-container {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: $color-white;
@@ -82,7 +83,6 @@
   }
 }
 
-
 @media only screen and (max-width: $bp-small) {
   .navigation-menu {
     &-container {
@@ -90,4 +90,3 @@
     }
   }
 }
-
