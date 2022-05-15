@@ -39,6 +39,8 @@
       text-decoration: none;
       transition: all 0.3s;
 
+      color: $color-black;
+
       &:hover {
         color: $color-primary;
       }
