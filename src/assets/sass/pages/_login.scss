@@ -84,6 +84,11 @@
 .login-checkbox {
   @include flex-row-nocenter;
 
+  [for='remember'],
+  [id='remember'] {
+    cursor: pointer;
+  }
+
   input {
     width: 1.5rem;
     height: 1.5rem;
