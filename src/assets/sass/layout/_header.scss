@@ -12,10 +12,11 @@
   }
 
   &__container {
-    margin: 0 25rem;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 85rem;
   }
 
   &__logo-box {
@@ -114,10 +115,15 @@
 
   &__buttons {
     margin-left: 5rem;
+    display: flex;
+
+    & > :not(:last-child) {
+      border-right: 1px solid $color-border;
+    }
   }
 
-  &__login-signup-btn:link,
-  &__login-signup-btn:visited {
+  &__login-btn:link,
+  &__login-btn:visited {
     color: $color-white;
     font-size: 1rem;
     background-color: $color-primary;
@@ -131,44 +137,25 @@
     position: relative;
   }
 
-  &__login-signup-btn::before {
-    content: 'Login';
-    z-index: 10;
-    border-right: 1px solid rgba($color-grey, 0.3);
+  &__signup-btn:link,
+  &__signup-btn:visited {
     color: $color-white;
     font-size: 1rem;
     background-color: $color-primary;
     text-decoration: none;
     padding: 0.6rem 1.5rem;
-    border-top-left-radius: 4rem;
-    border-bottom-left-radius: 4rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    position: absolute;
-    right: 0px;
-    top: -1.5px;
-  }
-
-  &__login-signup-btn::after {
-    content: 'Sign up';
-    color: $color-white;
-    font-size: 1rem;
-    background-color: $color-primary;
-    text-decoration: none;
-    padding: 0.6rem 1.5rem;
+    font-family: $font-secondary;
     border-top-right-radius: 4rem;
     border-bottom-right-radius: 4rem;
     text-transform: uppercase;
     font-weight: 400;
-    position: absolute;
-    right: -6.6rem;
-    top: -1.5px;
+    position: relative;
   }
 }
 
-@media only screen and (max-width: $bp-extra-large) {
+@media only screen and (max-width: $bp-large) {
   .header {
-    &__icons {
+    &__flex-column {
       display: none;
     }
 

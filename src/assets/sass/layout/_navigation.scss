@@ -30,59 +30,39 @@
   }
 
   &-hamburger {
-    width: 1.8rem;
-    height: 3px;
-    background-color: $color-black;
-    position: relative;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+
+    &-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
   }
 
   &-checkbox {
-    display: block;
+    display: none;
   }
 
   &-checkbox:checked ~ .navigation-menu-container {
     transform: translateX(0);
   }
-
-  &-hamburger::before {
-    content: '';
-    width: 1.8rem;
-    height: 3px;
-    position: absolute;
-    top: -10px;
-    left: 0;
-  }
-
-  &-hamburger::after {
-    content: '';
-    width: 1.8rem;
-    height: 3px;
-    position: absolute;
-    top: 10px;
-    left: 0;
-  }
 }
 
-@media only screen and (max-width: $bp-extra-large) {
+@media only screen and (max-width: $bp-large) {
   .header__nav {
-    display: none;
+    display: block;
 
     &-hamburger {
-      background-color: $color-black;
-      align-self: center;
-      position: absolute;
-      right: 1.5rem;
+      width: 35px;
+      height: 4px;
+      background-color: black;
     }
 
-    &-hamburger::before {
-      background-color: $color-black;
-      content: '';
-    }
-
-    &-hamburger::after {
-      content: '';
-
-      background-color: $color-black;
+    &-for-small {
+      display: flex;
+      justify-content: space-between;
     }
   }
 
