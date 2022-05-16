@@ -1,5 +1,5 @@
 .login-form {
-  margin-top: 15rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,6 +36,7 @@
       font-family: $font-secondary;
       text-decoration: none;
       transition: all 0.2s;
+      color: $color-black;
 
       &:hover {
         color: $color-primary;
@@ -106,4 +107,3 @@
     margin-top: 5rem;
   }
 }
-
